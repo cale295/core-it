@@ -1,0 +1,31 @@
+/* Structures.css */
+
+.mySwiper {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.mySwiper .swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 300px; /* Atur lebar card sesuai kebutuhan */
+    height: 400px; /* Atur tinggi card sesuai kebutuhan */
+    display: flex; /* Pastikan card menggunakan flexbox */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+}
+
+.mySwiper .swiper-slide img {
+    display: block;
+    width: 100%;
+}
+
+/* Tambahan untuk memastikan card berada di tengah pada mobile */
+@media (max-width: 640px) {
+    .mySwiper .swiper-slide {
+        width: auto; /* Mengatur lebar card otomatis pada tampilan mobile */
+        height: auto; /* Mengatur tinggi card otomatis pada tampilan mobile */
+        flex: 1 0 auto; /* Mengatur card agar memenuhi ruang */
+    }
+}
